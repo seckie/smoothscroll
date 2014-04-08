@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "smoothscroll.js",
+  "sourceRoot": "../_coffee/",
+  "sources": [
+    "smoothscroll.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA;AAAA"
+}
