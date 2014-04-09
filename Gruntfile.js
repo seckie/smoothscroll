@@ -10,11 +10,8 @@ module.exports = function (grunt) {
   grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
       coffee: {
-        compileWithMaps: {
-          options: {
-            sourceMap: true,
-            sourceMapDir: 'maps/'
-          },
+        main: {
+          options: { },
           files: {
             'js/smoothscroll.js': '_coffee/*.coffee',
           }
@@ -93,17 +90,21 @@ module.exports = function (grunt) {
         }
       },
       watch: {
-        scss: {
-          files: [ '_scss/*.scss' ],
-          tasks: [ 'compass:dev' ]
-        },
+//        scss: {
+//          files: [ '_scss/*.scss' ],
+//          tasks: [ 'compass:dev' ]
+//        },
         coffee: {
-          files: [ '.coffee' ],
+          files: [ '_coffee/*.coffee' ],
+          tasks: [ 'coffee' ]
+        },
+        coffeelint: {
+          files: [ '_coffee/*.coffee' ],
           tasks: [ 'coffeelint' ]
         }
       }
   });
 
-  grunt.registerTask('default', [ 'compass:dev', 'coffee', 'coffeelint', 'watch' ]);
-  grunt.registerTask('deploy', [ 'copy', 'rename', 'compass:dev', 'coffee' ]);
+  grunt.registerTask('default', [ 'coffee', 'coffeelint', 'watch' ]);
+  grunt.registerTask('deploy', [ 'copy', 'rename', 'coffee' ]);
 };
