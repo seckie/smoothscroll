@@ -61,7 +61,7 @@ module.exports = function (grunt) {
             {
               expand: true,
               cwd: 'bower_components/jquery-1.11.0/',
-              src: [ '_temp_jquery.js' ],
+              src: [ 'index.js' ],
               dest: 'js/'
             },
             {
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         main: {
           files: [
             {
-              src: [ 'js/_temp_jquery.js' ],
+              src: [ 'js/index.js' ],
               dest: 'js/jquery-1.11.0.min.js'
             }
           ]
