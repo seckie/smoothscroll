@@ -1,21 +1,21 @@
 {
-  "name": "backbone-modal",
+  "name": "backbone-smoothscroll",
   "version": "0.1.0",
-  "description": "Modal widget on Backbone.View",
+  "description": "Smooth scroll module on Backbone.View",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/seckie/backbone-modal.git"
+    "url": "https://github.com/seckie/smoothscroll.git"
   },
   "author": "Naoki Sekiguchi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seckie/backbone-modal/issues"
+    "url": "https://github.com/seckie/smoothscroll/issues"
   },
-  "homepage": "https://github.com/seckie/backbone-modal",
+  "homepage": "https://github.com/seckie/smoothscroll",
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-copy": "~0.5.0",
